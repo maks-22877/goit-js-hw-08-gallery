@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Галерея зображень</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <!-- Галерея зображень -->
+      <section class="gallery-section">
+        <ul class="gallery js-gallery"></ul>
+      </section>
+
+      <!-- Модальне вікно для перегляду -->
+      <div class="lightbox js-lightbox" role="dialog" aria-modal="true">
+        <div class="lightbox__overlay" tabindex="-1"></div>
+
+        <figure class="lightbox__content">
+          <img class="lightbox__image" src="" alt="" />
+        </figure>
+
+        <button
+          type="button"
+          class="lightbox__button"
+          data-action="close-lightbox"
+          aria-label="Закрити модальне вікно"
+        ></button>
+      </div>
+    </main>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
